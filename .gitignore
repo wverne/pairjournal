@@ -1,0 +1,7 @@
+# Heroku / Django stuff
+venv
+*.pyc
+staticfiles
+
+# Temp Files
+*~
