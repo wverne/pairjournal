@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>{% block title %}Pair Journal{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% load staticfiles %}
+    <link href="{% static "bootstrap/css/bootstrap.min.css" %}" 
+	  rel="stylesheet" media="screen">
+    <link href="{% static "bootstrap/css/bootstrap-responsive.min.css" %}" 
+	  rel="stylesheet">
+
+    <!-- custom styles -->
+    <!--
+    <link href="http://fonts.googleapis.com/css?family=Crimson+Text"
+	  rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Allerta"
+	  rel="stylesheet" type="text/css">-->
+    <link href="{% static "custom.css" %}" rel="stylesheet">
+
+    {% block head_scripts %}
+    {% endblock %}
+
+  </head>
+
+  <body>
+
+    <!-- NAVBAR
+	 ================================================== -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="/">
+	  PairJournal
+        </a>
+        <div class="nav-collapse collapse">
+	  {% block navbar_fill %}
+	  {% endblock %}
+        </div><!--/.nav-collapse -->
+      </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->
+
+    {% block content %}
+    <h1>Pair Journal</h1>
+
+    <p>This is the template page!</p>
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    {% block body_scripts %}
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+    {% endblock %}
+
+  </body>
+
+</html>
