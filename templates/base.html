@@ -16,11 +16,10 @@
 	  rel="stylesheet">
 
     <!-- custom styles -->
-    <!--
-    <link href="http://fonts.googleapis.com/css?family=Crimson+Text"
+    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911"
 	  rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Allerta"
-	  rel="stylesheet" type="text/css">-->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100"
+	  rel="stylesheet" type="text/css">
     <link href="{% static "custom.css" %}" rel="stylesheet">
 
     {% block head_scripts %}
@@ -33,7 +32,9 @@
     <div class="navbar">
       <div class="container">
 	<div class="navbar-header">
+	  {% block navbar_header_fill %}
 	  <a class="navbar-brand" href="/">PairJournal</a>
+	  {% endblock %}
 	</div><!-- navber-header -->
 	{% block navbar_fill %}
 	{% endblock %}
