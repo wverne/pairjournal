@@ -30,24 +30,22 @@
 
   <body>
 
-    <!-- NAVBAR
-	 ================================================== -->
     <div class="navbar">
-      <div class="navbar-inner">
-        <a class="brand" href="/">
-	  PairJournal
-        </a>
-        <div class="nav-collapse collapse">
-	  {% block navbar_fill %}
-	  {% endblock %}
-        </div><!--/.nav-collapse -->
-      </div><!-- /.navbar-inner -->
-    </div><!-- /.navbar -->
+      <div class="container">
+	<div class="navbar-header">
+	  <a class="navbar-brand" href="/">PairJournal</a>
+	</div><!-- navber-header -->
+	{% block navbar_fill %}
+	{% endblock %}
+      </div><!-- container -->
+    </div><!-- navbar -->
 
     {% block content %}
-    <h1>Pair Journal</h1>
+    <div class="container">
+      <h1>Pair Journal</h1>
 
-    <p>This is the template page!</p>
+      <p>This is the template page!</p>
+    </div><!-- container -->
     {% endblock %}
 
     {% block footer %}

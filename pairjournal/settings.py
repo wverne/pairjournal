@@ -1,7 +1,7 @@
 # Django settings for pairjournal project.
 
 import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.join(os.path.dirname(__file__), '../')
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG

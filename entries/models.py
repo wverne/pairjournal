@@ -17,7 +17,7 @@ class Journal(models.Model):
                     'user2__last_name', 'user2__first_name',
                     'name']
 
-class Entry(model.Model):
+class Entry(models.Model):
     user = models.ForeignKey(User, verbose_name="Journaler")
     journal = models.ForeignKey(Journal)
     content = models.TextField()
