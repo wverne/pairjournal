@@ -3,8 +3,10 @@ from django.contrib.auth.models import User
 
 class Journal(models.Model):
     name = models.CharField(max_length=100, verbose_name="Journal Name")
-    user1 = models.ForeignKey(User, verbose_name="Journaler 1")
-    user2 = models.ForeignKey(User, verbose_name="Journaler 2")
+    user1 = models.ForeignKey(User, verbose_name="Journaler 1", 
+                              related_name="journaler_1")
+    user2 = models.ForeignKey(User, verbose_name="Journaler 2",
+                              related_name="journaler_2")
     is_public = models.BooleanField(default=False)
 
     def __unicode__(self):
