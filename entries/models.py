@@ -8,9 +8,9 @@ class Journal(models.Model):
     is_public = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return self.name + " (" + 
-               self.user1.first_name + " " + self.user1.last_name + " and " +
-               self.user2.first_name + " " + self.user2.last_name + ")"
+        return (self.name + " (" +
+                self.user1.first_name + " " + self.user1.last_name + " and " +
+                self.user2.first_name + " " + self.user2.last_name + ")")
 
     class Meta:
         ordering = ['user1__last_name', 'user1__first_name',
