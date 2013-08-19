@@ -10,6 +10,11 @@ p, div {
     font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
 }
 
+.navbar-inner, .navbar {
+    background: transparent;
+    border: 0px;
+}
+
 .form-signin {
     max-width: 330px;
     padding: 15px;
