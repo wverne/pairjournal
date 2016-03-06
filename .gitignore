@@ -1,7 +1,11 @@
-# Heroku / Django stuff
-venv
-*.pyc
-staticfiles
+# Virtual environment
+pj_env
 
-# Temp Files
+# Compiled Python
+*.pyc
+
+# Temp files
 *~
+
+# PyCharm files
+.idea
