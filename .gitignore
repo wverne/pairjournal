@@ -9,3 +9,6 @@ pj_env
 
 # PyCharm files
 .idea
+
+# Vagrant local files
+.vagrant
