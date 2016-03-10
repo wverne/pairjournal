@@ -1,0 +1,2 @@
+name 'pairjournal'
+depends 'python'
