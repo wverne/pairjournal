@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pairjournal.urls'
+ROOT_URLCONF = 'apps.pairjournal.urls'
 
 TEMPLATES = [
     {
